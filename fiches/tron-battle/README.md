@@ -28,10 +28,6 @@
 **Temps** (27 nov 2026, UTC, relevés API) : Bois 2 de 12:10 à 14:01 (111 min ; v2 soumise à 12:55, donc ~66 min de classement jusqu'à 100 %) ; Bois 1 de 14:01 à 16:10 (129 min ; v3 soumise à 14:07, attente = classement à 100 %) ; Bronze depuis 16:10. Nos fichiers d'équipe n'ont pas été mis à jour entre 14:37 et 16:10 : les chiffres de cette période viennent uniquement de l'API.
 
 
-## Journal des trouvailles
+## Trouvailles de l'équipe
 
-Ajoute une ligne par trouvaille, la plus récente en haut ([comment contribuer](../CONTRIBUTING.md)).
-
-| Date (UTC) | Ligue | Erreur → correction → règle | Source |
-|---|---|---|---|
-| … | … | … | notre essai / lien |
+Chaque trouvaille est un petit fichier dans [`trouvailles/`](trouvailles/). Pour en ajouter une : [comment contribuer](../../CONTRIBUTING.md).

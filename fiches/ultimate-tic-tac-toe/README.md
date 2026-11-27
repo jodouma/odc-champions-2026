@@ -32,10 +32,6 @@
 *Non vérifié :* les règles du Bronze de Tron, et celles de Mad Pod Racing et Hypersonic (pas encore en Bronze) ; le Silver des jeux Bronze ; les estimations d'heure (marquées *estimation*) ; les chiffres, copiés des fichiers de l'équipe et non rejoués. Les relevés API datent de 16:19 UTC ; les fichiers d'équipe de 14:37 à 16:12 UTC.
 
 
-## Journal des trouvailles
+## Trouvailles de l'équipe
 
-Ajoute une ligne par trouvaille, la plus récente en haut ([comment contribuer](../CONTRIBUTING.md)).
-
-| Date (UTC) | Ligue | Erreur → correction → règle | Source |
-|---|---|---|---|
-| … | … | … | notre essai / lien |
+Chaque trouvaille est un petit fichier dans [`trouvailles/`](trouvailles/). Pour en ajouter une : [comment contribuer](../../CONTRIBUTING.md).

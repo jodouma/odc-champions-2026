@@ -31,10 +31,6 @@
 
 - Bois … → Bois … : … min
 
-## Journal des trouvailles
+## Trouvailles de l'équipe
 
-Ajoute une ligne par trouvaille, la plus récente en haut.
-
-| Date (UTC) | Ligue | Erreur → correction → règle | Source |
-|---|---|---|---|
-| … | … | … | notre essai / lien |
+Chaque trouvaille est un petit fichier dans `trouvailles/`. Pour en ajouter une : [comment contribuer](../CONTRIBUTING.md).

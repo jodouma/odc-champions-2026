@@ -18,10 +18,12 @@ Pour des étudiants. Tiré de nos essais du 27 nov 2026 sur cinq jeux CodinGame 
 
 ## Les fiches
 
-- [Tron Battle — Bronze atteint](tron-battle.md)
-- [Mad Pod Racing — Bois 1 pour l'instant](mad-pod-racing.md)
-- [Troll Farm (Spring Challenge 2026) — Bronze atteint](troll-farm.md)
-- [Hypersonic — Bois 1 pour l'instant](hypersonic.md)
-- [Ultimate Tic-Tac-Toe — Bronze atteint](ultimate-tic-tac-toe.md)
+- [Tron Battle — Bronze atteint](tron-battle/)
+- [Mad Pod Racing — Bois 1 pour l'instant](mad-pod-racing/)
+- [Troll Farm (Spring Challenge 2026) — Bronze atteint](troll-farm/)
+- [Hypersonic — Bois 1 pour l'instant](hypersonic/)
+- [Ultimate Tic-Tac-Toe — Bronze atteint](ultimate-tic-tac-toe/)
 
-Un nouveau jeu ? Copie [`_modele.md`](_modele.md). Une trouvaille ? Voir [comment contribuer](../CONTRIBUTING.md).
+Chaque jeu a son dossier : la fiche (`README.md`) et un dossier `trouvailles/`, un fichier par trouvaille.
+
+Un nouveau jeu ? Copie [`_modele.md`](_modele.md). Une trouvaille ? Copie [`_modele-trouvaille.md`](_modele-trouvaille.md) et suis [comment contribuer](../CONTRIBUTING.md).

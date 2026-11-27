@@ -28,10 +28,6 @@
 **Temps** (27 nov 2026, UTC) : v1 soumise 14:48 → Bois 2 à 15:27:34 (39 min) → Bois 1 à 16:07:46 (40 min) ; attente = classement à 100 %.
 
 
-## Journal des trouvailles
+## Trouvailles de l'équipe
 
-Ajoute une ligne par trouvaille, la plus récente en haut ([comment contribuer](../CONTRIBUTING.md)).
-
-| Date (UTC) | Ligue | Erreur → correction → règle | Source |
-|---|---|---|---|
-| … | … | … | notre essai / lien |
+Chaque trouvaille est un petit fichier dans [`trouvailles/`](trouvailles/). Pour en ajouter une : [comment contribuer](../../CONTRIBUTING.md).

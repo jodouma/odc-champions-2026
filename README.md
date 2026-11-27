@@ -29,11 +29,11 @@ Nos bots d'entraînement (compte `sg0-degodas`), au 27 nov 2026 à 16:19 UTC :
 
 | Jeu | Ligue | Rang dans la ligue | Fiche |
 |---|---|---|---|
-| Tron Battle | 🥉 Bronze | 1er / 1 698 | [fiche](fiches/tron-battle.md) |
-| Troll Farm | 🥉 Bronze | 1er / 395 | [fiche](fiches/troll-farm.md) |
-| Ultimate Tic-Tac-Toe | 🥉 Bronze | 1er / 5 453 | [fiche](fiches/ultimate-tic-tac-toe.md) |
-| Mad Pod Racing | 🪵 Bois 1 | 1er / 13 259 | [fiche](fiches/mad-pod-racing.md) |
-| Hypersonic | 🪵 Bois 1 | 1er / 193 | [fiche](fiches/hypersonic.md) |
+| Tron Battle | 🥉 Bronze | 1er / 1 698 | [fiche](fiches/tron-battle/) |
+| Troll Farm | 🥉 Bronze | 1er / 395 | [fiche](fiches/troll-farm/) |
+| Ultimate Tic-Tac-Toe | 🥉 Bronze | 1er / 5 453 | [fiche](fiches/ultimate-tic-tac-toe/) |
+| Mad Pod Racing | 🪵 Bois 1 | 1er / 13 259 | [fiche](fiches/mad-pod-racing/) |
+| Hypersonic | 🪵 Bois 1 | 1er / 193 | [fiche](fiches/hypersonic/) |
 
 Les classements ne sont pas finis : un rang peut encore bouger.
 
@@ -55,14 +55,14 @@ Les classements ne sont pas finis : un rang peut encore bouger.
 | Dossier | Contenu |
 |---|---|
 | [`docs/`](docs/) | Briefing, langages, bonnes pratiques, ligues, IA, entraînement |
-| [`fiches/`](fiches/) | Une fiche par jeu, ligue par ligue jusqu'à la Légende, avec son journal des trouvailles |
+| [`fiches/`](fiches/) | Un dossier par jeu : la fiche (ligue par ligue jusqu'à la Légende) et les trouvailles de l'équipe, un fichier chacune |
 | [`arena/`](arena/) | Arène locale : fais combattre 2 à 4 bots sur ton PC |
 | [`starters/`](starters/) | Squelettes de bots génériques (Python, C++) |
 | [`examples/`](examples/) | Un bot d'exemple à battre (Tron Battle) |
 
 ## Contribuer
 
-Tu as trouvé un piège, une astuce, ou tu as changé de ligue ? **Ajoute-le.** Une ligne suffit : erreur → correction → règle.
+Tu as trouvé un piège, une astuce, ou tu as changé de ligue ? **Ajoute-le.** Un petit fichier suffit : erreur → correction → règle.
 
 👉 [Comment contribuer](CONTRIBUTING.md) : où mettre quoi, le format, et comment envoyer ta contribution depuis GitHub sans rien installer.
 

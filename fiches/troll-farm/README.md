@@ -29,10 +29,6 @@
 **Temps** (27 nov 2026, UTC) : v1 soumise 14:41 → Bois 1 à 14:43:16 (~2 min, promotion par parties contre le boss) ; v2 soumise 14:46 → Bronze à 14:47:20 (~4 min) ; Bronze : 51 % à 16:19 (API), 100 % attendu vers 17:20 d'après l'équipe (estimation, ~10 points par 30 min).
 
 
-## Journal des trouvailles
+## Trouvailles de l'équipe
 
-Ajoute une ligne par trouvaille, la plus récente en haut ([comment contribuer](../CONTRIBUTING.md)).
-
-| Date (UTC) | Ligue | Erreur → correction → règle | Source |
-|---|---|---|---|
-| … | … | … | notre essai / lien |
+Chaque trouvaille est un petit fichier dans [`trouvailles/`](trouvailles/). Pour en ajouter une : [comment contribuer](../../CONTRIBUTING.md).
