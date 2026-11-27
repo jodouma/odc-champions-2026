@@ -84,8 +84,9 @@ Aucun code de compétition n'est publié ici.
 ## Par jeu
 
 - **Tron Battle :** [Tron Battle — bonnes pratiques](tron-battle/bonnes-pratiques.md) (stratégie v1 à v4, temps, tests, API).
+- **Ultimate Tic-Tac-Toe :** [Ultimate Tic-Tac-Toe — bonnes pratiques](tic-tac-toe/bonnes-pratiques.md) (minimax en Bois, MCTS en Bronze, lire l'arbitre).
 
-Quatre autres jeux sont en cours (Mad Pod Racing, Troll Farm, Hypersonic, Ultimate Tic-Tac-Toe). Leurs trouvailles seront ajoutées ici.
+Trois autres jeux sont en cours (Mad Pod Racing, Troll Farm, Hypersonic). Leurs trouvailles seront ajoutées ici.
 
 ---
 

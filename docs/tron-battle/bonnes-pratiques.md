@@ -136,6 +136,7 @@ Pour ceux qui testent avec un agent IA (voir [comment on utilise l'IA](../ia-age
 | Plateau pas restauré après un arrêt de recherche | Le tour suivant joue sur un faux plateau | Copie avant, restaure après |
 | Joueur mort oublié | Ses cases restent des murs | `-1` = libère ses cases |
 | Ancien identifiant d'adversaire | Tests contre une version périmée | Relis `/opponents` avant chaque série |
+| Les scripts passaient le jeton API dans les arguments de `curl` | Visible en clair par tout `ps` sur la machine (vu sur Ultimate Tic-Tac-Toe) | Jamais de jeton dans les arguments : un fichier d'en-tête (`curl -H @fichier`) ; jamais de `ps` sans filtre |
 
 ## Bois 1 → Bronze
 
