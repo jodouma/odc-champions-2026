@@ -21,17 +21,17 @@ Aucun code de compétition n'est publié ici.
 
 ---
 
-## Où on en est (27 nov 2026, 15:51 UTC ; chaque ligne porte la date de sa lecture, voir « Par jeu »)
+## Où on en est (27 nov 2026, 16:19 UTC, relevés API ; chaque ligne porte la date de sa lecture, voir « Par jeu »)
 
 | Jeu | Ligue | Langage de la version live | Versions |
 |---|---|---|---|
-| Tron Battle | Wood 1 (depuis 14:01 UTC ; lu 14:37 UTC) | C++ (Python avant) | 3 écrites, 2 soumises |
-| Mad Pod Racing | Wood 1 (depuis ~15:01 UTC ; lu 15:11 UTC) | C++ | 2 soumises, 1 prête non soumise |
-| Troll Farm (Spring Challenge 2026) | Bronze (depuis 14:47 UTC ; lu 15:40 UTC) | Python 3 | 3 soumises, 1 candidate non soumise |
-| Hypersonic | Wood 2 (depuis 15:27 UTC ; lu 15:29 UTC) | C++ | 1 soumise |
-| Ultimate Tic-Tac-Toe | Bronze (depuis 15:29 UTC ; lu 15:42 UTC) | C++ | 2 soumises, 1 candidate non soumise |
+| Tron Battle | Bronze (depuis 16:10 UTC ; rang 1, 14 % du classement) | C++ (Python avant) | 3 écrites, 2 soumises |
+| Mad Pod Racing | Wood 1 (depuis 15:00 UTC ; rang 1, 80 % du classement) | C++ | 2 soumises, 1 prête non soumise |
+| Troll Farm (Spring Challenge 2026) | Bronze (depuis 14:47 UTC ; rang 1, 51 %) | Python 3 | 3 soumises, 1 candidate non soumise |
+| Hypersonic | Wood 1 (depuis 16:07 UTC ; rang 1, 18 %) | C++ | 1 soumise |
+| Ultimate Tic-Tac-Toe | Bronze (depuis 15:29 UTC ; rang 1, 31 %) | C++ | 2 soumises, 1 candidate non soumise |
 
-Les lectures datent de 14:37 à 15:42 UTC : les ligues ont pu bouger depuis.
+Ligues et classements : relevés API de 16:19 UTC (le score n'est pas final avant 100 %). Les fiches « Par jeu » citent les fichiers d'équipe, lus de 14:37 à 16:12 UTC. Fiches « Objectif Bronze » par jeu : `OBJECTIF_BRONZE.md`.
 
 ---
 
@@ -90,7 +90,7 @@ Les lectures datent de 14:37 à 15:42 UTC : les ligues ont pu bouger depuis.
 
 Une fiche par jeu, lue dans les fichiers de l'équipe du jeu à l'heure indiquée. Les chiffres sont ceux écrits dans ces fichiers.
 
-### Tron Battle — Wood 1 depuis 14:01:12 UTC (STATUS lu à 14:37 UTC)
+### Tron Battle — Bronze depuis 16:10 UTC (API 16:19) ; Wood 1 dès 14:01:12 (STATUS lu à 14:37 UTC)
 - **Live :** v3 C++, alpha-bêta + Voronoï avec points d'articulation ; la v2 Python (remplissage + Voronoï) a été promue de Wood 2 avec un score d'environ 30 contre environ 19 pour le boss. À 14:37 UTC : 46 % du classement, rang 1 sur 562, 94 victoires, 4 défaites.
 - **Erreur → correction → règle :** resoumission pendant un classement → on a attendu la promotion → ne resoumets jamais près d'une promotion.
 - **Erreur → correction → règle :** défaites cherchées en fin de partie → rejeu des images 10-60 → 74 des 88 défaites étaient une course au territoire perdue tôt.
@@ -114,12 +114,12 @@ Une fiche par jeu, lue dans les fichiers de l'équipe du jeu à l'heure indiqué
 - **Entre ligues :** Wood 2 : 1 troll, fruits seuls, 100 tours ; Wood 1 : 300 tours et TRAIN ; Bronze : toutes les règles (CHOP, MINE, PLANT).
 - **Meilleure trouvaille :** valeur = objets par tour d'un aller-retour complet [[post-mortem, 3e]](https://www.yannmoisan.com/spring-challenge-2026-postmortem.html).
 
-### Hypersonic — Wood 2 depuis 15:27:34 UTC (STATUS lu à 15:29 UTC)
-- **Live :** v1 C++, recherche en faisceau (profondeur 12, largeur ~100, 15 ms), survie vérifiée. Wood 3 : 100 %, score 27,22. Parties de test (15:29 UTC) : 24-4 contre le boss, 24-6 contre le 1er de Wood 3.
+### Hypersonic — Wood 1 depuis 16:07:46 UTC (STATUS lu à 16:12 UTC ; Wood 2 depuis 15:27:34, 40 min)
+- **Live :** v1 C++, recherche en faisceau (profondeur 12, largeur ~100, 15 ms), survie vérifiée. Wood 3 : 100 %, score 27,22 ; Wood 2 : 16 victoires, 3 défaites de 2 caisses (16:10 UTC). Parties de test (15:29 UTC) : 24-4 contre le boss, 24-6 contre le 1er de Wood 3.
 - **Erreur → correction → règle :** un index de case en `int8_t` repart en négatif → le bot se fige, 3 parties de test perdues sans message → ASan + UBSan sur une partie locale l'ont montré en une exécution → un timeout avec des tours rapides avant = un plantage jusqu'à preuve du contraire.
 - **Erreur → correction → règle :** on a d'abord cru à un serveur lent → afficher l'entrée lue sur `stderr` → la dernière ligne avant le timeout nomme l'état fautif.
 - **Erreur → correction → règle :** un modèle d'adversaire pessimiste jugé séduisant → mesuré 45,8 % sur 60 parties et 42,5 % sur 120 → écarté.
-- **Entre ligues :** Wood 2 : objets ; Wood 1 : bombes adverses mortelles (écrit dans STATUS, pas encore vécu).
+- **Entre ligues :** Wood 2 : objets ; Wood 1 : murs X, bombes adverses mortelles, dernier en vie gagne (STATUS, 16:12 UTC).
 - **Meilleure trouvaille :** simulateur exact du tour, puis recherche sur ses propres coups [[forum]](https://forum.codingame.com/t/hypersonic-feedback-strategy/2067). DEFEATS : 19 victoires, 0 défaite (14:58 UTC).
 
 ### Ultimate Tic-Tac-Toe — Bronze depuis 15:29:58 UTC (STATUS lu à 15:31 UTC, CHANGELOG à 15:42 UTC)
