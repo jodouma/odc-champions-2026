@@ -23,7 +23,7 @@ Une seule équipe par pays passe le 3 décembre.
 4. Regarde **[comment on utilise l'IA](docs/ia-agent.md)**.
 5. Affronte les autres : **[jouer les uns contre les autres](docs/jouer-ensemble.md)**.
 6. Pars des squelettes dans [`starters/`](starters/).
-6. Fais combattre ton bot contre ceux de l'équipe avec [l'arène locale](arena/).
+7. Fais combattre ton bot contre ceux de l'équipe avec [l'arène locale](arena/).
 
 ## Liens officiels
 
