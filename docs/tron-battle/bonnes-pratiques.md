@@ -1,6 +1,6 @@
 # Tron Battle — bonnes pratiques
 
-**En bref :** ce que `Assoo` a appris en montant en Bois 2 sur [Tron Battle](https://www.codingame.com/multiplayer/bot-programming/tron-battle) (27 nov 2026) : la v3 en Python est 3e sur 1 631, au-dessus du boss. Ce sont des **idées et des méthodes**, pas du code : écris ton propre bot.
+**En bref :** ce que `Assoo` a appris sur [Tron Battle](https://www.codingame.com/multiplayer/bot-programming/tron-battle) (27 nov 2026) : la v3 en Python a fini **1re sur 1 631** en Bois 2 et a été **promue en Bois 1**. Ce sont des **idées et des méthodes**, pas du code : écris ton propre bot.
 
 Les règles valables pour tous les jeux sont dans [nos bonnes pratiques](../bonnes-pratiques.md). Cette page ne garde que ce qui est propre à Tron, et ce que cette montée a ajouté.
 Les erreurs à ne plus refaire sont rangées par ligue, en [bas de page](#bois-2--bois-1).
@@ -38,8 +38,8 @@ Pourquoi un seuil aussi haut : **chaque soumission relance le classement de 0 %*
 | Version | Idée | Résultat **[mesuré]** |
 |---|---|---|
 | v1 | Voronoï à 1 coup | 56 V / 8 D en classement, assez pour battre le boss de Bois 2 |
-| v2 | Minimax alterné + alpha-bêta, approfondissement itératif | bat v1 **5 / 5** |
-| v3 | Meilleure évaluation du territoire | bat v2 **9 / 12**. En ligne : 3e / 1 631 en Bois 2 |
+| v2 | Minimax alterné + alpha-bêta, approfondissement itératif | bat v1 **5 / 5** ; 56 V / 16 D en classement (dernier relevé) |
+| v3 | Meilleure évaluation du territoire | bat v2 **9 / 12**. **Promue** : 1re / 1 631 en Bois 2 |
 | v4 | Port C++ de v3, plus rapide | **pas encore plus fort** : 2 / 6 contre v3, non soumis |
 
 ### v1 · Voronoï à 1 coup
@@ -110,13 +110,17 @@ Pour ceux qui testent avec un agent IA (voir [comment on utilise l'IA](../ia-age
 
 ## Bois 2 → Bois 1
 
-*En cours (27 nov 2026) : `Assoo` est 1er de Bois 2, le boss est 5e, classement à 82 %. La promotion n'est pas encore faite.*
+**Résultat : promu en Bois 1 le 27 nov 2026 à 15:35 (heure de Tunis)**, avec la v3 (Python : Voronoï + alpha-bêta + remplissage par parité). 1er sur 1 631 en Bois 2 à la fin ; le boss a fini 5e.
+
+- **Durée :** environ **2 h 47** entre la première soumission (12:48) et la promotion (15:35). L'essentiel : attendre les parties de classement, car chaque resoumission relançait le classement à 0 %.
+- **Classement de chaque version :** v1 56 V / 8 D ; v2 56 V / 16 D (dernier relevé) ; v3 est celle qui a été promue.
 
 ### Ce qui a marché
 - **Un Voronoï simple suffit pour battre le boss** de Bois 2 (v1 : 56 V / 8 D en classement).
 - **La boucle « une idée → A/B contre la version soumise → resoumettre si ≥ 9/12 »** : chaque version gardée battait clairement la précédente (v2 5/5, v3 9/12).
 - **Mieux évaluer avant de chercher plus loin** : espace ouvert, borne du damier, plus long chemin en fin de partie (v3).
-- **Ne pas resoumettre pendant le classement** : la v3 finit son classement en Python même si un port C++ existe.
+- **Une fois au-dessus du boss, arrêter de resoumettre** et laisser le classement finir ; on améliore en parties de test pendant ce temps. Chaque resoumission coûtait **30 à 60 min** de classement. La v3 Python a fini son classement même si un port C++ existait.
+- **Tester en A/B contre sa propre version soumise avant de resoumettre** : la v3 a battu la v2 9 / 12.
 
 ### Erreurs à ne plus refaire
 
@@ -132,6 +136,14 @@ Pour ceux qui testent avec un agent IA (voir [comment on utilise l'IA](../ia-age
 | Plateau pas restauré après un arrêt de recherche | Le tour suivant joue sur un faux plateau | Copie avant, restaure après |
 | Joueur mort oublié | Ses cases restent des murs | `-1` = libère ses cases |
 | Ancien identifiant d'adversaire | Tests contre une version périmée | Relis `/opponents` avant chaque série |
+
+## Bois 1 → Bronze
+
+*En cours (27 nov 2026) : mêmes règles qu'en Bois 2 (2 joueurs, mêmes entrées). La v3 démarre 5e, au-dessus du boss (7e).*
+
+### Ce qui a marché
+
+### Erreurs à ne plus refaire
 
 ---
 
