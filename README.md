@@ -23,8 +23,9 @@ Une seule équipe par pays passe le 3 décembre.
 4. Regarde **[comment on utilise l'IA](docs/ia-agent.md)**.
 5. Affronte les autres : **[jouer les uns contre les autres](docs/jouer-ensemble.md)** (pseudos, classements, étapes).
 6. Comprends **[les ligues et comment monter](docs/ligues.md)**.
-7. Pars des squelettes dans [`starters/`](starters/).
-8. Fais combattre ton bot contre ceux de l'équipe avec [l'arène locale](arena/).
+7. Applique **[nos bonnes pratiques](docs/bonnes-pratiques.md)** : les 10 règles dès la première minute, tirées de notre expérience.
+8. Pars des squelettes dans [`starters/`](starters/).
+9. Fais combattre ton bot contre ceux de l'équipe avec [l'arène locale](arena/).
 
 ## Liens officiels
 
