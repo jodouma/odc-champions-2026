@@ -39,6 +39,22 @@ Pour choisir tes adversaires dans l'éditeur. Ajoute le tien dans le groupe What
 - `A7G`
 - `bruhidkuser`
 
+## Les classements
+
+Pour voir ton rang, ta ligue et qui battre ensuite.
+
+| Jeu | Jouer | Classement |
+|---|---|---|
+| Tron Battle | [jouer](https://www.codingame.com/multiplayer/bot-programming/tron-battle) | [classement](https://www.codingame.com/multiplayer/bot-programming/tron-battle/leaderboard) |
+| Mad Pod Racing | [jouer](https://www.codingame.com/multiplayer/bot-programming/mad-pod-racing) | [classement](https://www.codingame.com/multiplayer/bot-programming/mad-pod-racing/leaderboard) |
+| Troll Farm (Spring 2026) | [jouer](https://www.codingame.com/multiplayer/bot-programming/spring-challenge-2026-troll-farm) | [classement](https://www.codingame.com/multiplayer/bot-programming/spring-challenge-2026-troll-farm/leaderboard) |
+| Hypersonic | [jouer](https://www.codingame.com/multiplayer/bot-programming/hypersonic) | [classement](https://www.codingame.com/multiplayer/bot-programming/hypersonic/leaderboard) |
+| Ultimate Tic-Tac-Toe | [jouer](https://www.codingame.com/multiplayer/bot-programming/tic-tac-toe) | [classement](https://www.codingame.com/multiplayer/bot-programming/tic-tac-toe/leaderboard) |
+
+Dans un classement, tape un pseudo dans la recherche pour retrouver un coéquipier.
+
+Un exemple de bot à battre : [`examples/tron-battle`](../examples/tron-battle/).
+
 ## Option 1 : sur CodinGame, par pseudo
 
 1. Tout le monde choisit **le même jeu** (par exemple Tron Battle).
