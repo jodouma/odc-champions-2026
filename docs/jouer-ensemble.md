@@ -26,6 +26,17 @@ Tous sont dans le [catalogue des jeux de bots](https://www.codingame.com/multipl
 
 Pour l'équipe qualifiée : [Code vs Zombies](https://www.codingame.com/training/optimization/code-vs-zombies) et [Mars Lander](https://www.codingame.com/multiplayer/optimization/mars-lander).
 
+## Nos pseudos CodinGame
+
+Pour choisir tes adversaires dans l'éditeur. Ajoute le tien dans le groupe WhatsApp.
+
+- `sg0-degodas` (coach)
+- `r00tOJ`
+- `GhostOfReach`
+- `Noussa`
+- `YassD`
+- `Assoo`
+
 ## Option 1 : sur CodinGame, par pseudo
 
 1. Tout le monde choisit **le même jeu** (par exemple Tron Battle).
