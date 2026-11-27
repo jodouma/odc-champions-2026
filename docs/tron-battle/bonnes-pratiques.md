@@ -110,9 +110,9 @@ Pour ceux qui testent avec un agent IA (voir [comment on utilise l'IA](../ia-age
 
 ## Bois 2 → Bois 1
 
-**Résultat : promu en Bois 1 le 27 nov 2026 à 15:35 (heure de Tunis)**, avec la v3 (Python : Voronoï + alpha-bêta + remplissage par parité). 1er sur 1 631 en Bois 2 à la fin ; le boss a fini 5e.
+**Résultat : promu en Bois 1 le 27 nov 2026 à 16:35 (heure de Tunis)**, avec la v3 (Python : Voronoï + alpha-bêta + remplissage par parité). 1er sur 1 631 en Bois 2 à la fin ; le boss a fini 5e.
 
-- **Durée :** environ **2 h 47** entre la première soumission (12:48) et la promotion (15:35). L'essentiel : attendre les parties de classement, car chaque resoumission relançait le classement à 0 %.
+- **Durée :** environ **2 h 47** entre la première soumission et la promotion, 13:48 → 16:35 (heure de Tunis). L'essentiel : attendre les parties de classement, car chaque resoumission relançait le classement à 0 %.
 - **Classement de chaque version :** v1 56 V / 8 D ; v2 56 V / 16 D (dernier relevé) ; v3 est celle qui a été promue.
 
 ### Ce qui a marché
