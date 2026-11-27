@@ -1,6 +1,6 @@
 # Les ligues à grimper
 
-**En bref :** tout le monde commence en Bois. Pour monter, il faut battre le **boss** de sa ligue. La dernière ligue s'appelle Légende.
+**En bref :** tout le monde commence en Bois. Pour monter, il faut battre le **boss** de sa ligue. La dernière ligue s'appelle Légende, et **c'est notre objectif**.
 
 ## L'échelle (exemple : Tron Battle)
 

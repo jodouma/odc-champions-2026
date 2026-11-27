@@ -1,4 +1,6 @@
-# Fiches par jeu : objectif Bronze
+# Fiches par jeu : objectif Légende
+
+**L'objectif est la ligue Légende**, sur tous les jeux ou sur ceux que tu choisis. Ces fiches couvrent pour l'instant la première étape, **le Bronze** ; elles s'allongent à chaque ligue gagnée (Argent, Or, Légende). Ajoute ce que tu trouves : [comment contribuer](../CONTRIBUTING.md).
 
 Pour des étudiants. Tiré de nos essais du 27 nov 2026 sur cinq jeux CodinGame (compte sg0-degodas). Aucun code de bot publié ici.
 **Légende :** **[notre run]** = mesuré par nous, heure UTC donnée · lien = source externe · *non vérifié* = pas contrôlé. Les chiffres sont ceux des fichiers de l'équipe de chaque jeu, à la date de leur lecture.

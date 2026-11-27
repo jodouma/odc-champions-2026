@@ -15,6 +15,14 @@
 
 Une seule équipe par pays passe le 3 décembre.
 
+## Notre objectif : la Légende 🏆
+
+Chacun vise la ligue **Légende** sur les jeux qu'il choisit. Le Bronze est la première étape, pas l'arrivée :
+
+🪵 Bois → 🥉 Bronze → 🥈 Argent → 🥇 Or → 🏆 **Légende**
+
+À chaque ligue gagnée, on écrit ce qui a marché dans la fiche du jeu ([comment contribuer](CONTRIBUTING.md)).
+
 ## Où on en est
 
 Nos bots d'entraînement (compte `sg0-degodas`), au 27 nov 2026 à 16:19 UTC :
@@ -36,7 +44,7 @@ Les classements ne sont pas finis : un rang peut encore bouger.
 | 1. Comprendre la compétition | [Briefing (PDF, 7 pages)](docs/Briefing_ODC_Champions_2026.pdf) |
 | 2. Choisir son langage | [Quel langage pour quelle épreuve](docs/langages.md) |
 | 3. Appliquer la méthode | [Nos bonnes pratiques](docs/bonnes-pratiques.md) : les 10 règles dès la première minute |
-| 4. Viser le Bronze | [Fiches par jeu](fiches/) : le chemin, la recette, les pièges |
+| 4. Viser la Légende, ligue par ligue | [Fiches par jeu](fiches/) : le chemin, la recette, les pièges (étape 1 : le Bronze) |
 | 5. Monter de ligue | [Les ligues et comment monter](docs/ligues.md) |
 | 6. S'affronter | [Jouer les uns contre les autres](docs/jouer-ensemble.md) : pseudos, classements, étapes |
 | 7. Utiliser l'IA | [Comment on utilise l'IA](docs/ia-agent.md) |
@@ -47,7 +55,7 @@ Les classements ne sont pas finis : un rang peut encore bouger.
 | Dossier | Contenu |
 |---|---|
 | [`docs/`](docs/) | Briefing, langages, bonnes pratiques, ligues, IA, entraînement |
-| [`fiches/`](fiches/) | Une fiche « objectif Bronze » par jeu, avec son journal des trouvailles |
+| [`fiches/`](fiches/) | Une fiche par jeu, ligue par ligue jusqu'à la Légende, avec son journal des trouvailles |
 | [`arena/`](arena/) | Arène locale : fais combattre 2 à 4 bots sur ton PC |
 | [`starters/`](starters/) | Squelettes de bots génériques (Python, C++) |
 | [`examples/`](examples/) | Un bot d'exemple à battre (Tron Battle) |

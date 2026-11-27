@@ -1,6 +1,6 @@
 # Contribuer au repo
 
-**En bref :** ce repo est la base commune des équipes. Chaque trouvaille utile y va, au bon endroit, en une ligne claire.
+**En bref :** ce repo est la base commune des équipes. L'objectif est la ligue **Légende** ; chaque trouvaille utile sur le chemin va ici, au bon endroit, en une ligne claire.
 
 ## Où mettre quoi
 
@@ -9,7 +9,7 @@
 | Une astuce ou un piège sur **un jeu précis** | la fiche du jeu dans [`fiches/`](fiches/), section « Journal des trouvailles » |
 | Une règle valable pour **tous les jeux** | [`docs/bonnes-pratiques.md`](docs/bonnes-pratiques.md), tableau « Erreur → correction → règle » |
 | Un **nouveau jeu** d'entraînement | une nouvelle fiche : copie [`fiches/_modele.md`](fiches/_modele.md) |
-| Un changement de **ligue ou de rang** | la ligne « Où on en est » de la fiche du jeu, avec la date et l'heure |
+| Un changement de **ligue ou de rang** | la ligne « Où on en est » de la fiche du jeu, avec la date et l'heure, et une ligne dans « Le chemin » : ce que la nouvelle ligue ajoute et ce qu'il a fallu pour passer |
 | Ton **pseudo CodinGame** | [`docs/jouer-ensemble.md`](docs/jouer-ensemble.md), section « Nos pseudos » |
 | Un outil ou un squelette **générique** | [`starters/`](starters/) ou [`arena/`](arena/) |
 

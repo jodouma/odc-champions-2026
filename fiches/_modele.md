@@ -2,6 +2,7 @@
 
 - **Jouer :** [lien CodinGame]
 - **Classement :** [lien]
+- **Objectif :** Légende
 - **Où on en est :** [ligue] · lu le [date] à [heure] UTC
 
 ## Le chemin
