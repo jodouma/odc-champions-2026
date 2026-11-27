@@ -83,6 +83,8 @@ Aucun code de compétition n'est publié ici.
 
 ## Par jeu
 
+- **Tron Battle :** [Tron Battle — bonnes pratiques](tron-battle/bonnes-pratiques.md) (stratégie v1 à v4, temps, tests, API).
+
 Quatre autres jeux sont en cours (Mad Pod Racing, Troll Farm, Hypersonic, Ultimate Tic-Tac-Toe). Leurs trouvailles seront ajoutées ici.
 
 ---
