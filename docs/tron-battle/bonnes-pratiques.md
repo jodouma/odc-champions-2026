@@ -3,6 +3,7 @@
 **En bref :** ce que `Assoo` a appris en montant en Bois 2 sur [Tron Battle](https://www.codingame.com/multiplayer/bot-programming/tron-battle) (27 nov 2026) : la v3 en Python est 3e sur 1 631, au-dessus du boss. Ce sont des **idées et des méthodes**, pas du code : écris ton propre bot.
 
 Les règles valables pour tous les jeux sont dans [nos bonnes pratiques](../bonnes-pratiques.md). Cette page ne garde que ce qui est propre à Tron, et ce que cette montée a ajouté.
+Les erreurs à ne plus refaire sont rangées par ligue, en [bas de page](#bois-2--bois-1).
 
 **Légende :** **[mesuré]** = parties jouées par nous le 27 nov 2026 · *non vérifié* = pas contrôlé.
 
@@ -77,7 +78,7 @@ Résultat : **6 à 12 tours de profondeur** au lieu de 3 à 8 en Python. Mais **
 
 ## 3. Performance et temps
 
-- **Garde une marge.** Chez `Assoo` : **50 ms au premier tour, puis 70 à 75 ms** sur les 100. Un autre essai du groupe a mesuré 77 à 104 ms côté serveur avec un budget de 70 ms : si tu vois des dépassements, descends vers 50 ms ([bonnes pratiques](../bonnes-pratiques.md)).
+- **Garde une marge.** Un premier budget de 85 ms sur 100 était trop juste. Chez `Assoo` : **50 ms au premier tour, puis 70 à 75 ms** sur les 100. Un autre essai du groupe a mesuré 77 à 104 ms côté serveur avec un budget de 70 ms : si tu vois des dépassements, descends vers 50 ms ([bonnes pratiques](../bonnes-pratiques.md)).
 - **Lis l'heure tous les 64 nœuds**, pas à chaque nœud : lire l'horloge coûte cher, surtout en Python.
 - **Quand la recherche s'arrête faute de temps, remets le plateau exactement dans son état d'origine.** Une exception qui sort au milieu de la recherche laisse des cases marquées « occupées » : le tour suivant joue sur un faux plateau. Le plus sûr : une copie avant, restaurée après.
 - En Python : précalcule une fois les voisins de chaque case (listes de cases), et travaille sur un tableau à une dimension (`y × 30 + x`).
@@ -94,22 +95,7 @@ Résultat : **6 à 12 tours de profondeur** au lieu de 3 à 8 en Python. Mais **
 
 ---
 
-## 5. Les pièges qu'on a pris
-
-| Piège | Ce qu'on a vu | La règle |
-|---|---|---|
-| Recherche peu profonde contre un long mur droit | v2 perd contre un joueur qui coupe le plateau tôt | Améliore l'évaluation avant la profondeur |
-| Échelles de score mélangées (× 1000 contre ~20) | Le bot s'emmure trop tôt, 1 / 3 | Garde les termes du même ordre de grandeur |
-| Port C++ plus rapide mais pas plus fort | 2 / 6 contre la version Python | Vérifie que le port joue pareil ; la vitesse seule ne suffit pas |
-| C++ envoyé comme Python3 | « Timeout » au tour 1 | Vérifie le langage avant de lire un résultat |
-| Un seul message d'échec compté | Des défaites invisibles | Compte « timeout », « in time », etc. |
-| Ancien identifiant d'adversaire | Tests contre une version périmée | Relis `/opponents` |
-| Plateau pas restauré après arrêt | Le tour suivant joue sur un faux plateau | Copie avant, restaure après |
-| Joueur mort oublié | Ses cases restent des murs | `-1` = libère ses cases |
-
----
-
-## 6. L'API CodinGame
+## 5. L'API CodinGame
 
 Pour ceux qui testent avec un agent IA (voir [comment on utilise l'IA](../ia-agent.md)) :
 
@@ -120,4 +106,33 @@ Pour ceux qui testent avec un agent IA (voir [comment on utilise l'IA](../ia-age
 
 ---
 
-Les nouvelles astuces seront ajoutées ici au fil de la montée.
+**Ligue par ligue :** à chaque promotion, une section avec ce qui a marché et les erreurs à ne plus refaire.
+
+## Bois 2 → Bois 1
+
+*En cours (27 nov 2026) : `Assoo` est 1er de Bois 2, le boss est 5e, classement à 82 %. La promotion n'est pas encore faite.*
+
+### Ce qui a marché
+- **Un Voronoï simple suffit pour battre le boss** de Bois 2 (v1 : 56 V / 8 D en classement).
+- **La boucle « une idée → A/B contre la version soumise → resoumettre si ≥ 9/12 »** : chaque version gardée battait clairement la précédente (v2 5/5, v3 9/12).
+- **Mieux évaluer avant de chercher plus loin** : espace ouvert, borne du damier, plus long chemin en fin de partie (v3).
+- **Ne pas resoumettre pendant le classement** : la v3 finit son classement en Python même si un port C++ existe.
+
+### Erreurs à ne plus refaire
+
+| Ce qui s'est passé | Ce que ça a coûté | La règle |
+|---|---|---|
+| Score de zone séparée × 1000 contre ~20 pour les cases disputées | Le bot s'emmurait trop tôt : **1 / 3** jusqu'au réglage à × 25 | Mets les termes d'un score au même ordre de grandeur avant de tester |
+| Le script de test envoyait le code C++ étiqueté **Python3** | **14 fausses défaites** « timeout » ; on a failli abandonner la v4 | Vérifie le champ langage ; un timeout au tour 1 = outil cassé, pas bot lent |
+| Premier budget de temps C++ : **85 ms** sur 100 | Trop juste : dépassements | Marge : 50 ms au premier tour, puis 70 ms au plus |
+| Un `pkill -f <motif>` correspondait aussi à la boucle qui suit le classement | La boucle de suivi s'est tuée elle-même | Tue par PID, ou avec un motif qui ne peut pas correspondre à ta propre commande |
+| Le script de série ne comptait que « in time » | Des défaites « timeout » non comptées | Compte tous les messages d'échec (« timeout », « in time »…) |
+| Recherche peu profonde contre un long mur droit (v2) | Défaites contre un joueur qui coupe le plateau tôt | Améliore l'évaluation avant la profondeur |
+| Port C++ plus rapide mais pas plus fort | 2 / 6 contre la v3 Python | Vérifie que le port choisit les mêmes coups ; la vitesse seule ne suffit pas |
+| Plateau pas restauré après un arrêt de recherche | Le tour suivant joue sur un faux plateau | Copie avant, restaure après |
+| Joueur mort oublié | Ses cases restent des murs | `-1` = libère ses cases |
+| Ancien identifiant d'adversaire | Tests contre une version périmée | Relis `/opponents` avant chaque série |
+
+---
+
+Une nouvelle section sera ajoutée à chaque promotion.
