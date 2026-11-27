@@ -22,6 +22,7 @@ Une seule équipe par pays passe le 3 décembre.
 3. Suis **[le plan d'entraînement individuel](docs/entrainement.md)** : chacun crée son propre bot.
 4. Regarde **[comment on utilise l'IA](docs/ia-agent.md)**.
 5. Pars des squelettes dans [`starters/`](starters/).
+6. Fais combattre ton bot contre ceux de l'équipe avec [l'arène locale](arena/).
 
 ## Liens officiels
 
