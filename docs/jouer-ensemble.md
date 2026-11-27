@@ -36,6 +36,8 @@ Pour choisir tes adversaires dans l'éditeur. Ajoute le tien dans le groupe What
 - `Noussa`
 - `YassD`
 - `Assoo`
+- `A7G`
+- `bruhidkuser`
 
 ## Option 1 : sur CodinGame, par pseudo
 
