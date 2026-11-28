@@ -32,7 +32,7 @@ Deux personnes peuvent contribuer au même jeu, à la même ligue, le même jour
 | Une règle valable pour **tous les jeux** | [`docs/bonnes-pratiques.md`](docs/bonnes-pratiques.md), tableau « Erreur → correction → règle » |
 | Un **nouveau jeu** d'entraînement | un nouveau dossier `fiches/<jeu>/` : copie [`fiches/_modele.md`](fiches/_modele.md) en `README.md` et crée `trouvailles/` |
 | Ton **pseudo CodinGame** | [`docs/jouer-ensemble.md`](docs/jouer-ensemble.md), section « Nos pseudos » |
-| Un outil ou un squelette **générique** | [`starters/`](starters/) ou [`arena/`](arena/) |
+| Un outil ou un squelette **générique** | [`starters/`](starters/), [`templates/`](templates/) ou [`arena/`](arena/) |
 
 Les fiches des jeux sont le **résumé** : le coach y reporte régulièrement les meilleures trouvailles. Tu n'as pas besoin d'y toucher pour partager une astuce.
 

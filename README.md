@@ -45,11 +45,12 @@ Trois jeux ont atteint la Légende dans la nuit du 27 au 28 novembre, avec les v
 | 2. Choisir son langage | [Quel langage pour quelle épreuve](docs/langages.md) |
 | 3. Se préparer au jour J | **[La fondation](docs/fondation.md)** : le plan des 7 heures, le type de jeu, la boîte à outils, l'équipe de 4 |
 | 4. Appliquer la méthode | [Nos bonnes pratiques](docs/bonnes-pratiques.md) : les 10 règles dès la première minute |
-| 5. Viser la Légende, ligue par ligue | [Fiches par jeu](fiches/) : le chemin, la recette, les pièges (étape 1 : le Bronze) |
-| 6. Monter de ligue | [Les ligues et comment monter](docs/ligues.md) |
-| 7. S'affronter | [Jouer les uns contre les autres](docs/jouer-ensemble.md) : pseudos, classements, étapes |
-| 8. Utiliser l'IA | [Comment on utilise l'IA](docs/ia-agent.md) |
-| 9. S'entraîner seul | [Plan d'entraînement individuel](docs/entrainement.md) |
+| 5. Démarrer un nouveau jeu sans page blanche | [Utiliser les templates](docs/utiliser-les-templates.md) : le kit, les 30 premières minutes, la boucle |
+| 6. Viser la Légende, ligue par ligue | [Fiches par jeu](fiches/) : le chemin, la recette, les pièges (étape 1 : le Bronze) |
+| 7. Monter de ligue | [Les ligues et comment monter](docs/ligues.md) |
+| 8. S'affronter | [Jouer les uns contre les autres](docs/jouer-ensemble.md) : pseudos, classements, étapes |
+| 9. Utiliser l'IA | [Comment on utilise l'IA](docs/ia-agent.md) |
+| 10. S'entraîner seul | [Plan d'entraînement individuel](docs/entrainement.md) |
 
 ## Ce qu'il y a dans le repo
 
@@ -59,6 +60,7 @@ Trois jeux ont atteint la Légende dans la nuit du 27 au 28 novembre, avec les v
 | [`fiches/`](fiches/) | Un dossier par jeu : la fiche (ligue par ligue jusqu'à la Légende) et les trouvailles de l'équipe, un fichier chacune |
 | [`arena/`](arena/) | Arène locale : fais combattre 2 à 4 bots sur ton PC |
 | [`starters/`](starters/) | Squelettes de bots génériques (Python, C++) |
+| [`templates/`](templates/) | Kit de démarrage : suivi (statut, versions, leçons, défaites), prompts pour l'IA, outil de bilan |
 | [`examples/`](examples/) | Un bot d'exemple à battre (Tron Battle) |
 
 ## Contribuer

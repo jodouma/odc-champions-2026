@@ -118,7 +118,7 @@ x y valeur             (k lignes)
 
 | Bot | Ce qu'il fait |
 |---|---|
-| `depart.py` | Le squelette `starters/python/bot.py` avec `read_turn` adapté au jeu. Il attend : à vous de l'améliorer. |
+| `depart.py` | Le squelette `starters/python/bot.py` adapté au jeu (constantes, lecture, coups légaux). Il attend : à vous d'écrire `evaluate`. |
 | `glouton.py` / `glouton.cpp` | Va vers l'olive qui rapporte le plus par case parcourue. |
 | `aleatoire.py` | Un pas au hasard. |
 | `lent.py` | Réfléchit 0,5 s au tour 5 : montre l'élimination pour temps dépassé. |
@@ -127,7 +127,7 @@ x y valeur             (k lignes)
 
 - **Vider le tampon :** `print(..., flush=True)` en Python, `std::endl` en C++. Sinon l'arène ne voit rien → temps dépassé.
 - **Lire toutes les lignes du tour**, même celles dont on n'a pas besoin.
-- Le squelette `starters/python/bot.py` tel quel lit une seule ligne par tour : adaptez `read_turn` comme dans `depart.py`.
+- Le squelette `starters/python/bot.py` tel quel lit une seule ligne par tour : adaptez `read_init` et `read_turn` comme dans `depart.py`.
 - **Le debug va sur stderr**, jamais sur stdout.
 - Deux gloutons identiques visent la même olive et la perdent tous les deux : pensez aux adversaires !
 
