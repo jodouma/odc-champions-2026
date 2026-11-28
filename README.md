@@ -43,18 +43,19 @@ Trois jeux ont atteint la Légende dans la nuit du 27 au 28 novembre, avec les v
 |---|---|
 | 1. Comprendre la compétition | [Briefing (PDF, 7 pages)](docs/Briefing_ODC_Champions_2026.pdf) |
 | 2. Choisir son langage | [Quel langage pour quelle épreuve](docs/langages.md) |
-| 3. Appliquer la méthode | [Nos bonnes pratiques](docs/bonnes-pratiques.md) : les 10 règles dès la première minute |
-| 4. Viser la Légende, ligue par ligue | [Fiches par jeu](fiches/) : le chemin, la recette, les pièges (étape 1 : le Bronze) |
-| 5. Monter de ligue | [Les ligues et comment monter](docs/ligues.md) |
-| 6. S'affronter | [Jouer les uns contre les autres](docs/jouer-ensemble.md) : pseudos, classements, étapes |
-| 7. Utiliser l'IA | [Comment on utilise l'IA](docs/ia-agent.md) |
-| 8. S'entraîner seul | [Plan d'entraînement individuel](docs/entrainement.md) |
+| 3. Se préparer au jour J | **[La fondation](docs/fondation.md)** : le plan des 7 heures, le type de jeu, la boîte à outils, l'équipe de 4 |
+| 4. Appliquer la méthode | [Nos bonnes pratiques](docs/bonnes-pratiques.md) : les 10 règles dès la première minute |
+| 5. Viser la Légende, ligue par ligue | [Fiches par jeu](fiches/) : le chemin, la recette, les pièges (étape 1 : le Bronze) |
+| 6. Monter de ligue | [Les ligues et comment monter](docs/ligues.md) |
+| 7. S'affronter | [Jouer les uns contre les autres](docs/jouer-ensemble.md) : pseudos, classements, étapes |
+| 8. Utiliser l'IA | [Comment on utilise l'IA](docs/ia-agent.md) |
+| 9. S'entraîner seul | [Plan d'entraînement individuel](docs/entrainement.md) |
 
 ## Ce qu'il y a dans le repo
 
 | Dossier | Contenu |
 |---|---|
-| [`docs/`](docs/) | Briefing, langages, bonnes pratiques, ligues, IA, entraînement |
+| [`docs/`](docs/) | Briefing, fondation, langages, bonnes pratiques, ligues, IA, entraînement |
 | [`fiches/`](fiches/) | Un dossier par jeu : la fiche (ligue par ligue jusqu'à la Légende) et les trouvailles de l'équipe, un fichier chacune |
 | [`arena/`](arena/) | Arène locale : fais combattre 2 à 4 bots sur ton PC |
 | [`starters/`](starters/) | Squelettes de bots génériques (Python, C++) |
