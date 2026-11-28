@@ -25,17 +25,17 @@ Chacun vise la ligue **Légende** sur les jeux qu'il choisit. Le Bronze est la p
 
 ## Où on en est
 
-Nos bots d'entraînement (compte `sg0-degodas`), au 27 nov 2026 à 16:19 UTC :
+Nos bots d'entraînement (compte `sg0-degodas`), au 28 nov 2026 à 13:33 UTC (lu sur l'API CodinGame) :
 
-| Jeu | Ligue | Rang dans la ligue | Fiche |
-|---|---|---|---|
-| Tron Battle | 🥉 Bronze | 1er / 1 698 | [fiche](fiches/tron-battle/) |
-| Troll Farm | 🥉 Bronze | 1er / 395 | [fiche](fiches/troll-farm/) |
-| Ultimate Tic-Tac-Toe | 🥉 Bronze | 1er / 5 453 | [fiche](fiches/ultimate-tic-tac-toe/) |
-| Mad Pod Racing | 🪵 Bois 1 | 1er / 13 259 | [fiche](fiches/mad-pod-racing/) |
-| Hypersonic | 🪵 Bois 1 | 1er / 193 | [fiche](fiches/hypersonic/) |
+| Jeu | Ligue | Rang dans la ligue | Rang général | Fiche |
+|---|---|---|---|---|
+| Tron Battle | 🏆 **Légende** | 61 / 820 | 61 / 8 315 | [fiche](fiches/tron-battle/) |
+| Hypersonic | 🏆 **Légende** | 347 / 811 | 347 / 3 481 | [fiche](fiches/hypersonic/) |
+| Ultimate Tic-Tac-Toe | 🏆 **Légende** | 309 / 514 | 309 / 10 182 | [fiche](fiches/ultimate-tic-tac-toe/) |
+| Troll Farm | 🥇 Or | 71 / 465 | 365 / 2 267 | [fiche](fiches/troll-farm/) |
+| Mad Pod Racing | 🥇 Or | 9 421 / 23 613 | 11 786 / 237 058 | [fiche](fiches/mad-pod-racing/) |
 
-Les classements ne sont pas finis : un rang peut encore bouger.
+Trois jeux ont atteint la Légende dans la nuit du 27 au 28 novembre, avec les versions soumises le 27. Prochaine étape : monter dans le classement de la Légende, et passer l'Or sur les deux autres.
 
 ## Par où commencer
 
