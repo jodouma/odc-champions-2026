@@ -1,13 +1,16 @@
-# Mad Pod Racing — Bois 1 pour l'instant
+# Mad Pod Racing — Légende
 
 **Jouer :** https://www.codingame.com/multiplayer/bot-programming/mad-pod-racing
-**Où on en est :** Bois 1 depuis 15:00 UTC ; Bois 3 dès 14:39, Bois 2 dès 14:49 ; relevé API de 16:19 UTC : rang 1 sur 13 259, score 30,22 contre 21,74 pour le boss, classement à 80 % **[notre run]**. Bronze non atteint à cette heure.
+**Où on en est :** **Légende**, rang 270 sur 2 366 dans la ligue (270 sur 237 065 au général), score 36,34, classement à 100 % ; relevé API du 28 nov 2026 vers 18:30 UTC **[run d'un membre de l'équipe]**. Premier run : Bois 1 depuis 15:00 UTC ; Bois 3 dès 14:39, Bois 2 dès 14:49 ; relevé API de 16:19 UTC : rang 1 sur 13 259, score 30,22 contre 21,74 pour le boss, classement à 80 % **[notre run]**. Bronze non atteint à cette heure.
 
 **Le chemin**
 - **Bois 3 :** 1 pod, une course contre le boss (le « 1 joueur » de l'API le cache). Un pilote qui vise bien les checkpoints suffit : 100 %, score 28,1.
 - **Bois 2 :** 2 valeurs en plus et une ligne adversaire dans l'entrée : l'ancienne version cesse de jouer. Score 21,76 contre 16,86 pour le boss.
 - **Bois 1 :** ajoute BOOST, même format d'entrée : la v2 continue de jouer.
-- **Bronze :** non lu.
+- **Bronze** (27 nov, 12:10 UTC, run d'un membre) : les chocs entre pods s'activent, toujours 1 pod par joueur.
+- **Argent** (27 nov, 14:10 UTC).
+- **Or** (27 nov, 19:26 UTC) : 2 pods par joueur. Un coureur et un bloqueur : voir [la trouvaille](trouvailles/2026-11-27-or-un-coureur-un-bloqueur.md).
+- **Légende** (27 nov, 23:54 UTC) : poussée jusqu'à 200 et BOOST commun aux deux pods : voir [la trouvaille](trouvailles/2026-11-28-legende-poussee-200-boost-partage.md). Du Bois 3 à la Légende en 13 h 34.
 
 **La recette**
 1. **Un pilote qui vise un point devant le checkpoint** (checkpoint moins quelques fois la vitesse) et coupe la poussée quand la cible est derrière.
